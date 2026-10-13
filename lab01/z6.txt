@@ -11,7 +11,7 @@ Klasa: Czytelnik
 Stan:
   - imie: String
   - nazwisko: String
-  - nr_karty_bibliotecznej: String / int
+  - nrKartyBibliotecznej: String / int
 Odpowiedzialnosci:
   - trzymanie informacji personalnych czytelnika
   - wiazanie osoby fizycznej z zalozona karta biblioteczna
@@ -20,8 +20,8 @@ Klasa: Wypozyczenie
 Stan:
   - czytelnik: Czytelnik
   - ksiazka: Ksiazka
-  - data_wypozyczenia: Date
-  - termin_zwrotu: Date
+  - dataWypozyczenia: Date
+  - terminWwrotu: Date
 Odpowiedzialnosci:
   - wiazanie wypozyczonej ksiazki i wypozyczajacego
   - trzymanie danych dotyczacych wypozyczenia (terminow)
