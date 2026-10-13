@@ -1,0 +1,30 @@
+Klasa: Ksiazka
+Stan:
+  - tytul: String
+  - autor: String
+  - isbn:  String
+  - rokWydania: int
+Odpowiedzialnosci:
+  - trzymanie informacji o ksiazce
+
+Klasa: Czytelnik
+Stan:
+  - imie: String
+  - nazwisko: String
+  - nr_karty_bibliotecznej: String / int
+Odpowiedzialnosci:
+  - trzymanie informacji personalnych czytelnika
+  - wiazanie osoby fizycznej z zalozona karta biblioteczna
+
+Klasa: Wypozyczenie
+Stan:
+  - czytelnik: Czytelnik
+  - ksiazka: Ksiazka
+  - data_wypozyczenia: Date
+  - termin_zwrotu: Date
+Odpowiedzialnosci:
+  - wiazanie wypozyczonej ksiazki i wypozyczajacego
+  - trzymanie danych dotyczacych wypozyczenia (terminow)
+
+Zaleznosc: ksiazka moze zostac wypozyczona przez czytelnika, o czym stanowi bindujacy obiekt Wypozyczenie
+

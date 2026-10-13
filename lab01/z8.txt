@@ -1,0 +1,8 @@
+A. numerRejestracyjny, marka, model, cenaZaDobe, stan (np enum W_NAPRAWIE, W_UZYTKU, DOSTEPNY...)
+B. nazwa, pozycja: Vector3d, predkosc: Vector3d, przyspieszenie, vMax
+C. vin, rocznik, przebieg, coDoZrobienia
+
+> Dlaczego nie istnieje jedna „poprawna” klasa Samochod pasująca do każdego programu?
+
+Bo kazdy program ze wzgledu na bycie specyficznym dla swojej konkretnej domeny, przetwarza okreslony zestaw danych, ktory niekoniecznie musi pokrywac 
+sie z innymi zastosowaniami. Zawarcie tych samych danych w diametralnie roznych use-case'ach skutkowaloby nadmiarowymi lub brakujacymi danymi.

@@ -1,0 +1,38 @@
+Komunikator internetowy
+
+Klasa: User
+Pola:
+  - nickname: String
+  - passwordHash: String
+Odpowiedzialnosci:
+  - przechowuje informacje o uzytkowniku
+
+Klasa: Chat
+Pola:
+  - members: []User
+  - admin: ?User
+  - messages: []Message
+Odpowiedzialnosci:
+  - przechowuje metadane o czacie (czlonkach, ewentualnym adminie, ...) -> addMember, setAdmin
+  - przechowuje wyslane na czacie wiadomosci -> addMessage
+
+Klasa: Message
+Pola:
+  - sender: User
+  - content: String
+  - attachments: []Attachment
+Odpowiedzialnosci:
+  - przechowuje dane wiadomosci (tresc, wysylajacy, zalaczniki) -> bindAttachment
+
+Klasa: Attachment
+Pola:
+  - uploader: User
+  - filename: String
+  - mime_type: String
+Odpowiedzialnosci:
+  - przechowuje informacje o pliku zalaczonym do wiadomosci
+
+1. Chat musi wiedziec o Userach (przynaleznych do niego); Message o ewentualnych podpietych do niej i kto ja wyslal; Attachment w zasadzie nie musi wiedzieć o pozostałych klasach, bo w tym modelu jest "childem" Message, która już ma przypisane autorstwo. User nie musi wiedziec o istnieniu pozostalych klas.
+2. Nie
+3. Metadane jak m.in. timestampy zdarzen, statusy odczytania, statusy aktywnosci...
+4. Nie sa one fundamentalne dla rozwazanego przypadku.
