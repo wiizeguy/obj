@@ -1,0 +1,10 @@
+20
+20
+30
+true
+false
+
+a - distinct obiekt
+b - ref do a
+c - distinct obiekt z wartoscia value przepisana z a
+
