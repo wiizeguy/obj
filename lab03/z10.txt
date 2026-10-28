@@ -1,0 +1,7 @@
+1. instance - dotyczy konkretnego studenta-obiektu
+2. static - dotyczy ogółu zbioru studentów, nie konkretnego
+3. static - jest stałą - konwencja + oszczędność pamięci (statyczna jest tworzona raz, nie per instancja)
+4. instance - dotyczy konkretnego konta-obiektu
+5. static - klasa jest bezstanowa, wymóg tworzenia obiektu, aby wywołać metodę, nie ma sensu
+6. instance - dotyczy konkretnego obiektu-samochodu
+7. static - jest stałą - jak w 3.

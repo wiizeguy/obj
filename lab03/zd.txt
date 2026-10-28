@@ -1,0 +1,4 @@
+1. Nie jest chronione - modyfikacja może nastąpić.
+2. Przez modyfikację zmiennej podanej do konstruktora (people) + przez modyfikację tablicy zwracanej przez getter
+3. this.members = members.clone(); - oraz - return this.members.clone();
+4. Nie wymaga takiej ochrony - String jest wewnętrznie immutable
